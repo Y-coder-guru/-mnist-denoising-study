@@ -1,0 +1,20 @@
+name: fc_smoke_s03_z16
+purpose: smoke
+seed: 42
+device: cpu
+cpu_threads: 2
+model:
+  type: fc
+  latent_dim: 16
+training:
+  epochs: 2
+  batch_size: 128
+  learning_rate: 0.001
+  noise_mode: fixed
+  sigma: 0.3
+data:
+  train_limit: 512
+  validation_limit: 128
+validation:
+  sigma: 0.3
+  noise_seed: 9300

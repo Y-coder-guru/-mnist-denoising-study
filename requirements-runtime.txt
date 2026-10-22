@@ -1,0 +1,8 @@
+# Use the platform's compatible GPU torch/torchvision pair; do not install CPU wheels on Kaggle.
+numpy>=1.26,<3
+pandas>=2,<3
+matplotlib>=3.8,<4
+scikit-image>=0.22,<1
+scipy>=1.11,<2
+tqdm>=4.66,<5
+PyYAML>=6,<7

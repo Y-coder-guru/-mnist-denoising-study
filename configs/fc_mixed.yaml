@@ -1,0 +1,21 @@
+name: fc_mixed_z16
+purpose: formal
+seed: 42
+device: auto
+cpu_threads: 2
+model:
+  type: fc
+  latent_dim: 16
+training:
+  epochs: 20
+  batch_size: 128
+  learning_rate: 0.001
+  noise_mode: mixed
+  sigma_low: 0.1
+  sigma_high: 0.5
+data:
+  train_limit: null
+  validation_limit: null
+validation:
+  sigma: 0.3
+  noise_seed: 9300

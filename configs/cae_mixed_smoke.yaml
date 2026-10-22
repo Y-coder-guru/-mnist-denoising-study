@@ -1,0 +1,21 @@
+name: cae_mixed_smoke_c16
+purpose: smoke
+seed: 42
+device: cpu
+cpu_threads: 2
+model:
+  type: cae
+  base_channels: 16
+training:
+  epochs: 2
+  batch_size: 128
+  learning_rate: 0.001
+  noise_mode: mixed
+  sigma_low: 0.1
+  sigma_high: 0.5
+data:
+  train_limit: 512
+  validation_limit: 128
+validation:
+  sigma: 0.3
+  noise_seed: 9300

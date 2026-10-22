@@ -1,0 +1,11 @@
+# Recorded local Python 3.10 CPU environment. Install the torch pair using
+# the official CPU wheel index before the remaining dependencies.
+torch==2.10.0
+torchvision==0.25.0
+numpy==2.2.6
+pandas==2.3.3
+matplotlib==3.10.9
+scikit-image==0.25.2
+scipy==1.15.3
+tqdm==4.70.1
+PyYAML==6.0.3

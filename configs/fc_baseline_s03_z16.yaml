@@ -1,0 +1,20 @@
+name: fc_baseline_s03_z16
+purpose: formal
+seed: 42
+device: auto
+cpu_threads: 2
+model:
+  type: fc
+  latent_dim: 16
+training:
+  epochs: 20
+  batch_size: 128
+  learning_rate: 0.001
+  noise_mode: fixed
+  sigma: 0.3
+data:
+  train_limit: null
+  validation_limit: null
+validation:
+  sigma: 0.3
+  noise_seed: 9300
